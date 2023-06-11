@@ -8,17 +8,16 @@ This tool manage projects which released by GitHub based on release tag.
 
 ### Information of packages
 ```toml
-[packages]
-nvim = {
-    repo = 'neovim/neovim',
-    bin  = 'nvim.appimage',
-    sign =  'nvim.appimage.sha256sum',
-}
+[[packages]]
+name = "nvim"
+repo = "neovim/neovim"
+bin  = "nvim.appimage"
+sign = "nvim.appimage.sha256sum"
 
-tmux = {
-    repository = 'tmux/tmux',
-    bin  = 'tmux-*.tar.gz',
-}
+[[packages]]
+name = "tmux"
+repo = "tmux/tmux"
+bin  = "tmux-*.tar.gz"
 ```
 
 - `repo`
